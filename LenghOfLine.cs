@@ -20,12 +20,13 @@ namespace OOPS_Line_Length
             this.valueOfY1 = valueOfY1;
             this.valueOfY2 = valueOfY2;
         }
-        public void lineLength()
+
+        public double lineLength()
         {
 
 
             double lengthOfALine = Math.Pow(Math.Pow(valueOfX2 - valueOfY1, 2) + Math.Pow(valueOfX2 + valueOfY1, 2), 0.5);
-            Console.WriteLine(lengthOfALine);
+            return lengthOfALine;
 
         }
     }
